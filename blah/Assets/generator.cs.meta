@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 0e0cd02101f562d4ca184cda2c217e81
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - brick: {fileID: 100000, guid: aa5a1406bc260054eb2600e212b34ecd, type: 2}
+  - button: {fileID: 100000, guid: 4fa8b6cb307ccb244b0682c57da6bf22, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
