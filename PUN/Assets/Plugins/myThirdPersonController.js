@@ -39,7 +39,7 @@ var runSpeed = 6.0;
 var inAirControlAcceleration = 3.0;
 
 // How high do we jump when pressing jump and letting go immediately
-var jumpHeight = 2.5;
+var jumpHeight = 10;
 
 // The gravity for the character
 var gravity = 20.0;

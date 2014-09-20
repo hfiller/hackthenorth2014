@@ -26,8 +26,8 @@ public class RandomMatchmaker : MonoBehaviour {
 
     void OnJoinedRoom()
     {
-        GameObject monster = PhotonNetwork.Instantiate("monsterprefab", Vector3.zero, Quaternion.identity, 0);
-        monster.GetComponent<myThirdPersonController>().isControllable = true;
+		GameObject player = PhotonNetwork.Instantiate("playerprefab", Vector3.zero, Quaternion.identity, 0);
+        player.GetComponent<myThirdPersonController>().isControllable = true;
     }
 
 	// Update is called once per frame

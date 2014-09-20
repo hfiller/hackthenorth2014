@@ -124,9 +124,9 @@ public function Update() : void {
 		f_inAirTime = 0.0;
 		f_inAirStartTime = Time.time;
 	} else {
-		f_verticalSpeed -= gravity * Time.deltaTime; //if our character in the air
+		//f_verticalSpeed -= gravity * Time.deltaTime; //if our character in the air
 		//Count Time
-		f_inAirTime = Time.time - f_inAirStartTime;
+		//f_inAirTime = Time.time - f_inAirStartTime;
 	}
 
 	// Calculate actual motion
@@ -174,6 +174,7 @@ public function Update() : void {
 
 //Checking if the character hit the ground (collide Below)
 public function IsGrounded () : boolean {
+	return true;
 	return (c_collisionFlags & CollisionFlags.CollidedBelow);
 }
 //Geting if the character is jumping or not
