@@ -30,8 +30,8 @@ public class RandomMatchmaker : MonoBehaviour {
     {
 		Debug.Log (isHost);
 		Vector3 location = new Vector3();
-		location.Set (-8.02f, -3.19f, -1.00f);
-		GameObject player = PhotonNetwork.Instantiate("New Prefab", Vector3.zero, Quaternion.identity, 0);
+		location.Set (-0.0f, -0.0f, -1.00f);
+		GameObject player = PhotonNetwork.Instantiate("New Prefab", location, Quaternion.identity, 0);
         player.GetComponent<myThirdPersonController>().isControllable = true;
 		player.GetComponent<myThirdPersonController>().isHost = isHost;
 		isHost = false;

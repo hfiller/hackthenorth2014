@@ -183,14 +183,14 @@ function Update() {
 		moveSpeed = 0.00;
 		if (Input.GetKey (KeyCode.LeftArrow)) {
 			moveSpeed = walkSpeed * Time.deltaTime * (-1);
-			anim.SetFloat("direction",-1);
+			anim.SetFloat("direction",-1f);
 			//make the person rotate to the left.
 			counter = 0;
 		}
 		 else if (Input.GetKey (KeyCode.RightArrow)) {
 			moveSpeed = walkSpeed * Time.deltaTime * (1);
 			//make the person turn to the right.
-			anim.SetFloat("direction",1);
+			anim.SetFloat("direction",1f);
 			counter = 0;
 		} else {
 			counter++;
